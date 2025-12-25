@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nek0cha's profile</title>
+	<link rel="icon" href="assets/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<script>
+
+		// disallow copy
+		document.addEventListener('copy', (e) => {
+    e.preventDefault();
+    alert("👀");
+		});
+		
+		// disallow eight click
+		document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+		});
+
+	</script>
+	<style>
+		/* Tailwind utilities cover most styling; keep a few small custom rules */
+		.textshadow { text-shadow: 0 0 10px rgba(0,0,0,0.8); }
+		::-webkit-scrollbar { display: none; }
+		.detail { max-width: 90vw; line-height: 1.4; }
+
+
+	</style>
+</head>
+	<body class="h-screen w-screen overflow-hidden font-sans text-white bg-gradient-to-r from-[#f6b1ff] to-[#e7ffe8] select-none">
+	<!-- Fixed background layer (keeps image fixed on iOS browsers) -->
+	<div aria-hidden="true" class="-z-10 fixed inset-0 bg-center bg-cover" style="background-image:url('assets/background.webp'); background-attachment:fixed; -webkit-transform:translateZ(0); transform:translateZ(0); will-change:transform;"></div>
+	<article class="h-screen w-screen overflow-y-scroll snap-y snap-mandatory flex flex-col">
+		<section class="flex justify-center items-center min-h-screen w-full snap-start">
+			<div class="flex flex-col items-center">
+				<img src="assets/icon.webp" alt="pfp" class="border-4 border-white w-36 rounded-full shadow-2xl">
+				<div class="mt-4 bg-transparent rounded-md px-3 py-1 w-72 transition hover:bg-black/10 hover:backdrop-blur-md textshadow text-center">
+					<h2 class="text-lg">さぼりねこ</h2>
+				</div>
+			</div>
+		</section>
+		
+		<section class="flex justify-center items-center min-h-screen w-full snap-center bg-[rgba(0,0,0,0.2)] backdrop-blur-md">
+			<div class="text-center">
+				<h2 class="mb-4">詳細</h2>
+				<div class="detail text-left bg-black/10 backdrop-blur-sm shadow-md p-4 rounded-md">
+					<p class="mt-3"><span class="font-semibold">名前</span><br>さぼりねこ</p>
+					<p class="mt-3"><span class="font-semibold">年齢</span><br>16歳</p>
+					<p class="mt-3"><span class="font-semibold">趣味</span><br>ゲーム！(原神とかスタレとか...)<br>寝ること！<br>音楽聞くこと！(くりーぴーなっつさんとか柊マグネタイトさんとか！)</p>
+					<p class="mt-3"><span class="font-semibold">一言</span><br>基本的にひましてるよ 🫠</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="flex justify-center items-center h-[10vh] min-h-[10vh] w-full snap-end bg-[rgba(0,0,0,0.7)] backdrop-blur-lg">
+			<footer><p>&copy; さぼりねこ All rights reserved.</p></footer>
+		</section>
+	</article>
+	
+</body>
+</html>
